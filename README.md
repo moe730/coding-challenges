@@ -1,22 +1,22 @@
 # coding-challenges
 This is were my friend and I are going over java fundamentals
 
-##Data Types and Variables
+## Data Types and Variables
 
-##Features and Architecture
+## Features and Architecture
 
-##Operator and Expressions
+## Operator and Expressions
 
-##String Class
+## String Class
 
-##Conditional Statements and Loops
+## Conditional Statements and Loops
 
-##OOPs Concept in Depth
+## OOPs Concept in Depth
 
-##Multithreading
+## Multithreading
 
-##JAVA IO Streams
+## JAVA IO Streams
 
-##Collection Framework
+## Collection Framework
 
-##Java 8
+## Java 8
