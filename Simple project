@@ -1,0 +1,39 @@
+package Hello;
+
+public class MadLibs {
+  /*
+  This program generates a mad libbed story.
+Author: Maurice
+Date: 8/05/2022
+  */
+
+        public static void main(String[] args){
+            String name1 = "Max";
+            String adjective1 = "Big";
+            String adjective2 = "Small";
+            String adjective3 = "Smooth";
+            String verb1= "jump";
+            String noun1 = "Dog";
+            String noun2 = "Water Bottle";
+            String noun3 ="Cell Phone";
+            String noun4 = "Computer";
+            String noun5 = "Side walk";
+            String noun6 = "Water Bottle";
+            String name2 = "Lilly";
+            int number = 65;
+            String place1= "Staten Island";
+
+
+
+
+
+
+
+            //The template for the story
+String story = "This morning "+name1+" woke up feeling "+adjective1+". 'It is going to be a "+adjective2+" day!' Outside, a bunch of "+noun1+"s were protesting to keep "+noun2+" in stores. They began to "+verb1+" to the rhythm of the "+noun3+", which made all the "+noun4+"s very "+adjective3+". Concerned, "+name1+" texted "+name2+", who flew "+name1+" to "+place1+" and dropped "+name1+" in a puddle of frozen "+noun5+". "+name1+" woke up in the year "+number+", in a world where "+noun6+"s ruled the world.";
+
+            System.out.println(story);
+        }
+    }
+
+
