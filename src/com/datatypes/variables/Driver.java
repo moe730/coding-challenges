@@ -1,9 +1,13 @@
 package com.datatypes.variables;
 
+import com.operators.expresions.OperatorsAndExpressions;
+
 
 public class Driver {
     public static void main(String[] args) {
         DataTypes data = new DataTypes();
+        OperatorsAndExpressions ops = new OperatorsAndExpressions();
+        ops.math(20,2);
 
     data.printHi();
 
@@ -21,7 +25,7 @@ public class Driver {
         System.out.println(!data.aBoolean);
         //System.out.printf("I have %d dogs!", data.aByte );
         data.loops();
-        
+
 
 
     }
