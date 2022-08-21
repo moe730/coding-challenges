@@ -1,7 +1,7 @@
 package com.algorithims;
 
-import java.util.HashSet;
-import java.util.Random;
+
+import java.util.*;
 
 public class Algorithims {
     //doing some array algorithims
@@ -150,5 +150,81 @@ public void quickSort(int[] nums, int lowIndex, int highIndex){
 
     }
 
+    public void messingSet(String input){
+        HashSet <String> set = new HashSet<String>();
+        set.add("lemur");
+        set.add("lemurs");
+        set.add(input);
+        System.out.println(set.size());
+
+        Iterator it = set.iterator();
+        while (it.hasNext()){
+            System.out.println(it.next());
+        }
+
+        System.out.println(set);
+
+
+    }
+
+    public void messingHashMap(){
+    int a = 11;
+    int b = 22;
+    int c = 9;
+
+    //using a hashmap
+        HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
+        hashMap.put("a",a);
+        hashMap.put("b",b);
+        hashMap.put("c",c);
+        System.out.println(hashMap);
+        System.out.println(hashMap.get("a"));
+    }
+
+   //create a method that takes in an array and returns an array of current and max value
+    //the initial value needs to be 1500
+    //so the example will be array[]={10,20,39,-20}
+    /*the return of this array should return the sum of all the indexes +1500
+    * and also return the highest plus the 1500
+    *
+    * array [1569,1549 ]*/
+
+    public int[] returnArray(int[] array) {
+
+        int initial = 1500;
+        int current = 0;
+        int highest = 0;
+        int tempHighest = 0;
+        int tempSum = 0;
+        int[] answerArray = new int[2];
+
+        for (int i = 0; i < array.length; i++) {
+
+            tempSum += array[i];
+
+            System.out.println("this is the sum without inital: " + tempSum);
+
+
+            if (tempSum >= tempHighest) {
+                tempHighest = tempSum;
+                System.out.println("this is the plain array score: " + tempHighest);
+            }
+
+
+        }
+        highest = tempHighest + initial;
+        current = tempSum + initial;
+        //current=+initial;
+
+        answerArray[0] = highest;
+        answerArray[1] = current;
+        System.out.println(highest);
+        System.out.println(current);
+        printArray(array);
+        System.out.println();
+        printArray(answerArray);
+
+        return answerArray;
+    }
 
 }
